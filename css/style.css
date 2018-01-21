@@ -1,0 +1,60 @@
+/*Helper*/
+body {
+  color: white;
+  font-family: Lato; }
+
+.p-black, body .about-us {
+  color: #3c3c3c; }
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Lato; }
+  body .header {
+    background-image: url("../images/layer-8.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    min-height: 100vh; }
+    body .header .logo {
+      width: 65px;
+      margin-top: 235px; }
+    body .header h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 54px;
+      letter-spacing: 8.62px; }
+    body .header h3 {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 15px;
+      letter-spacing: 0.9px;
+      padding: 10px 500px; }
+    body .header img {
+      width: 23px;
+      margin-top: 150px; }
+  body .about-us {
+    height: 326px;
+    text-align: center; }
+    body .about-us .box {
+      border: 1px solid;
+      position: relative;
+      margin: 100px 300px;
+      padding: 50px 100px; }
+      body .about-us .box h1 {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 8.95px;
+        position: absolute;
+        left: 250px;
+        top: -50px;
+        z-index: 2;
+        display: inline-block;
+        background-color: white;
+        width: 500px; }
+      body .about-us .box h3 {
+        font-weight: 100;
+        line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */
