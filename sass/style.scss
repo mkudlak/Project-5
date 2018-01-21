@@ -1,10 +1,46 @@
 /*Helper*/
-body {
-    color: white;
-    font-family: Lato;
-}
+
 .p-black {
     color: #3c3c3c;
+}
+.p-white {
+    color: white;
+}
+.paragraph-title {
+    font-size: 34px;
+    font-weight: bolder;
+    letter-spacing: 8.95px;
+
+}
+.paragragh {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+    margin-top: 30px;
+}
+.p-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-black {
+    border: 1px solid black;
+    margin: 100px 50px;
+    padding: 30px 20px;
+    position: relative;
+}
+.box-white {
+    border: 1px solid white;
+    margin: 100px 50px;
+    padding: 30px 20px;
+    position: relative;
+}
+.box-title {
+    position: absolute;
+    top: -7%;
+    right: 37%;
+    background-color: white;
+    z-index: 2;
 }
 
 
@@ -13,6 +49,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: Lato;
+    text-align: center;
+    @extend .p-white;
     .header {
         background-image: url("../images/layer-8.png");
         background-size: cover;
@@ -25,7 +63,7 @@ body {
         }
         h1 {
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: bolder;
             font-size: 54px;
             letter-spacing: 8.62px;
         }
@@ -34,37 +72,55 @@ body {
             font-weight: 200;
             font-size: 15px;
             letter-spacing: 0.9px;
-            padding: 10px 500px;
+            line-height: 29px;
         }
         img {
             width: 23px;
-            margin-top: 150px;
         }
     }
     .about-us {
-        height: 326px;
-        text-align: center;
+
+        @extend .p-center;
         @extend .p-black;
-        .box {
-            border: 1px solid;
-            position: relative;
-            margin: 100px 300px;
-            padding: 50px 100px;
+        .box-black {
             h1 {
-                font-size: 34px;
-                font-weight: 700;
-                letter-spacing: 8.95px;
-                position: absolute;
-                left: 250px;
-                top: -50px;
-                z-index: 2;
-                display: inline-block;
-                background-color: white;
-                width: 500px;
+                @extend .paragraph-title;
             }
             h3 {
-                font-weight: 100;
-                line-height: 24px;
+                @extend .paragragh;
+            }
+        }
+    }
+    .services {
+        height: 488px;
+        background-image: url('../images/layer-4.png');
+        @extend .p-center;
+        @extend .p-white;
+        .box-white {
+            .box-title {
+                h1 {
+                    @extend .paragraph-title;
+                }
+            }
+            h3 {
+                @extend .paragragh;
+            }
+        }
+    }
+    .what-we-do {
+        height: 1196px;
+        @extend .p-center;
+        @extend .p-black;
+        .container {
+            .box-black {
+                .box-title {
+                    h1 {
+                        @extend .paragraph-title;
+                    }
+                }
+                h3 {
+                    @extend .paragragh;
+                }
             }
         }
     }

@@ -1,16 +1,51 @@
 /*Helper*/
-body {
-  color: white;
-  font-family: Lato; }
-
-.p-black, body .about-us {
+.p-black, body .about-us, body .what-we-do {
   color: #3c3c3c; }
+
+.p-white, body, body .services {
+  color: white; }
+
+.paragraph-title, body .about-us .box-black h1, body .services .box-white .box-title h1, body .what-we-do .container .box-black .box-title h1 {
+  font-size: 34px;
+  font-weight: bolder;
+  letter-spacing: 8.95px; }
+
+.paragragh, body .about-us .box-black h3, body .services .box-white h3, body .what-we-do .container .box-black h3 {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  margin-top: 30px; }
+
+.p-center, body .about-us, body .services, body .what-we-do {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box-black {
+  border: 1px solid black;
+  margin: 100px 50px;
+  padding: 30px 20px;
+  position: relative; }
+
+.box-white {
+  border: 1px solid white;
+  margin: 100px 50px;
+  padding: 30px 20px;
+  position: relative; }
+
+.box-title {
+  position: absolute;
+  top: -7%;
+  right: 37%;
+  background-color: white;
+  z-index: 2; }
 
 body {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  font-family: Lato; }
+  font-family: Lato;
+  text-align: center; }
   body .header {
     background-image: url("../images/layer-8.png");
     background-size: cover;
@@ -22,7 +57,7 @@ body {
       margin-top: 235px; }
     body .header h1 {
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: bolder;
       font-size: 54px;
       letter-spacing: 8.62px; }
     body .header h3 {
@@ -30,31 +65,13 @@ body {
       font-weight: 200;
       font-size: 15px;
       letter-spacing: 0.9px;
-      padding: 10px 500px; }
+      line-height: 29px; }
     body .header img {
-      width: 23px;
-      margin-top: 150px; }
-  body .about-us {
-    height: 326px;
-    text-align: center; }
-    body .about-us .box {
-      border: 1px solid;
-      position: relative;
-      margin: 100px 300px;
-      padding: 50px 100px; }
-      body .about-us .box h1 {
-        font-size: 34px;
-        font-weight: 700;
-        letter-spacing: 8.95px;
-        position: absolute;
-        left: 250px;
-        top: -50px;
-        z-index: 2;
-        display: inline-block;
-        background-color: white;
-        width: 500px; }
-      body .about-us .box h3 {
-        font-weight: 100;
-        line-height: 24px; }
+      width: 23px; }
+  body .services {
+    height: 488px;
+    background-image: url("../images/layer-4.png"); }
+  body .what-we-do {
+    height: 1196px; }
 
 /*# sourceMappingURL=style.css.map */
