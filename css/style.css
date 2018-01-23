@@ -1,16 +1,17 @@
 /*Helper*/
-.p-black, body .about-us, body .what-we-do {
+.p-black, body .about-us, body .what-we-do, body .contact .container .box-black .box-title h1, body .contact .container .box-black h3, body footer .container {
   color: #3c3c3c; }
 
 .p-white, body, body .services {
   color: white; }
 
-.paragraph-title, body .about-us .box-black h1, body .services .box-white .box-title h1, body .what-we-do .container .box-black .box-title h1 {
+.paragraph-title, body .about-us .box-black .box-title h1, body .services .box-white .box-title h1, body .what-we-do .container .box-black .box-title h1, body .what-we-do .container .box-black .box-element h2, body .contact .container .box-black .box-title h1 {
   font-size: 34px;
   font-weight: bolder;
-  letter-spacing: 8.95px; }
+  letter-spacing: 8.95px;
+  text-transform: uppercase; }
 
-.paragragh, body .about-us .box-black h3, body .services .box-white h3, body .what-we-do .container .box-black h3 {
+.paragragh, body .about-us .box-black h3, body .services .box-white h3, body .what-we-do .container .box-black .box-element h3, body .contact .container .box-black h3 {
   font-size: 16px;
   font-weight: 100;
   line-height: 24px;
@@ -35,10 +36,24 @@
 
 .box-title {
   position: absolute;
-  top: -7%;
-  right: 37%;
-  background-color: white;
-  z-index: 2; }
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  padding: 5px 20px;
+  background-color: white; }
+
+.works-title, body .works .container-fluid .row .item-1 h3, body .works .container-fluid .row .item-2 h3, body .works .container-fluid .row .item-3 h3, body .works .container-fluid .row .item-4 h3, body .works .container-fluid .row .item-5 h3, body .works .container-fluid .row .item-6 h3 {
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 8.95px;
+  text-transform: uppercase;
+  margin: 150px 50px 10px 10px; }
+
+.section-margin, body .about-us, body .services, body .what-we-do, body .works, body .contact {
+  margin-bottom: 50px;
+  margin-top: 50px; }
 
 body {
   width: 100%;
@@ -71,7 +86,72 @@ body {
   body .services {
     height: 488px;
     background-image: url("../images/layer-4.png"); }
+    body .services .box-white .box-title h1 {
+      color: black; }
   body .what-we-do {
     height: 1196px; }
+    body .what-we-do .container .box-black .box-title {
+      position: absolute;
+      top: -2%; }
+    body .what-we-do .container .box-black .box-element img {
+      margin: 50px 0;
+      cursor: pointer; }
+      body .what-we-do .container .box-black .box-element img:hover {
+        transform: scale(1.2); }
+    body .what-we-do .container .box-black .box-element h2 {
+      font-size: 20px; }
+  body .works {
+    height: 485px; }
+    body .works .container-fluid {
+      padding: 0; }
+      body .works .container-fluid .row {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 4px; }
+        body .works .container-fluid .row .item-1 {
+          background-image: url("../images/layer-5-copy.png");
+          background-size: cover;
+          margin-right: 2px; }
+        body .works .container-fluid .row .item-2 {
+          background-image: url("../images/layer-5-copy-3.png");
+          margin-right: 2px;
+          margin-left: 2px;
+          background-size: cover; }
+        body .works .container-fluid .row .item-3 {
+          background-image: url("../images/layer-5-copy-2.png");
+          margin-left: 2px;
+          background-size: cover; }
+      body .works .container-fluid .row {
+        height: 237px; }
+        body .works .container-fluid .row .item-4 {
+          background-image: url("../images/layer-5-copy-2.png");
+          background-size: cover;
+          margin-right: 2px; }
+        body .works .container-fluid .row .item-5 {
+          background-image: url("../images/layer-5-copy-3.png");
+          background-size: cover;
+          margin-right: 2px;
+          margin-left: 2px; }
+        body .works .container-fluid .row .item-6 {
+          background-image: url("../images/layer-5-copy.png");
+          background-size: cover;
+          margin-left: 2px; }
+  body .contact {
+    height: 297px; }
+    body .contact .container .box-black .btn {
+      border-radius: 0;
+      padding: 10px 100px;
+      text-transform: uppercase; }
+  body footer {
+    height: 100px;
+    line-height: 50px;
+    white-space: nowrap; }
+    body footer .container img {
+      margin-right: 10px; }
+    body footer .container p:hover {
+      transform: scale(1.2); }
+    body footer .container p a {
+      text-decoration: none;
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */

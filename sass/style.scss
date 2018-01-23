@@ -10,7 +10,7 @@
     font-size: 34px;
     font-weight: bolder;
     letter-spacing: 8.95px;
-
+    text-transform: uppercase;
 }
 .paragragh {
     font-size: 16px;
@@ -37,11 +37,26 @@
 }
 .box-title {
     position: absolute;
-    top: -7%;
-    right: 37%;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    padding: 5px 20px;
     background-color: white;
-    z-index: 2;
 }
+.works-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8.95px;
+    text-transform: uppercase;
+    margin: 150px 50px 10px 10px;
+}
+.section-margin {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 
 
 body {
@@ -79,12 +94,14 @@ body {
         }
     }
     .about-us {
-
         @extend .p-center;
         @extend .p-black;
+        @extend .section-margin;
         .box-black {
-            h1 {
-                @extend .paragraph-title;
+            .box-title {
+                h1 {
+                    @extend .paragraph-title;
+                }
             }
             h3 {
                 @extend .paragragh;
@@ -96,10 +113,12 @@ body {
         background-image: url('../images/layer-4.png');
         @extend .p-center;
         @extend .p-white;
+        @extend .section-margin;
         .box-white {
             .box-title {
                 h1 {
                     @extend .paragraph-title;
+                    color: black;
                 }
             }
             h3 {
@@ -111,15 +130,140 @@ body {
         height: 1196px;
         @extend .p-center;
         @extend .p-black;
+        @extend .section-margin;
+        .container {
+            .box-black {
+                .box-title {
+                    position: absolute;
+                    top: -2%;
+                    h1 {
+                        @extend .paragraph-title;
+                    }
+                }
+                .box-element {
+                    img {
+                        margin: 50px 0 ;
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                    h2 {
+                        @extend .paragraph-title;
+                        font-size: 20px;
+                    }
+                    h3 {
+                        @extend .paragragh;
+                    }
+                }
+            }
+        }
+    }
+    .works {
+        height: 485px;
+        @extend .section-margin;
+        .container-fluid {
+            padding: 0;
+            .row { 
+                width: 100%;
+                margin: 0;
+                margin-bottom: 4px;
+                .item-1 {
+                    background-image: url('../images/layer-5-copy.png');
+                    background-size: cover;
+                    margin-right: 2px;
+                    h3 {
+                        @extend .works-title;
+                    }
+                }
+                .item-2 {
+                    background-image: url('../images/layer-5-copy-3.png');
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    background-size: cover;
+                    h3 {
+                        @extend .works-title;
+                    }
+                }
+                .item-3 {
+                    background-image: url('../images/layer-5-copy-2.png');
+                    margin-left: 2px;
+                    background-size: cover;
+                    h3 {
+                        @extend .works-title;
+                    }
+                } 
+            }
+            .row { 
+                height: 237px;
+                .item-4 {
+                    background-image: url('../images/layer-5-copy-2.png');
+                    background-size: cover;
+                    margin-right: 2px;
+                    h3 {
+                        @extend .works-title;
+                    }
+
+                }
+                .item-5 {
+                    background-image: url('../images/layer-5-copy-3.png');
+                    background-size: cover;
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    h3 {
+                        @extend .works-title;
+                    }
+                }
+                .item-6 {
+                    background-image: url('../images/layer-5-copy.png');
+                    background-size: cover;
+                    margin-left: 2px;
+                    h3 {
+                        @extend .works-title;
+                    }
+                } 
+            }
+        }
+    }
+    .contact {
+        height: 297px;
+        @extend .section-margin;
         .container {
             .box-black {
                 .box-title {
                     h1 {
                         @extend .paragraph-title;
+                        @extend .p-black;
                     }
                 }
                 h3 {
                     @extend .paragragh;
+                    @extend .p-black;
+                }
+                .btn {
+                    border-radius: 0;
+                    padding: 10px 100px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    footer {
+        height: 100px;
+        line-height: 50px;
+        white-space: nowrap;
+        .container {
+            @extend .p-black;
+            img {
+                margin-right: 10px;
+            }
+            p {
+                &:hover {
+                    transform: scale(1.2);
+                }
+                a {
+                text-decoration: none;
+                color: black;
                 }
             }
         }
