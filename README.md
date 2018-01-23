@@ -3,6 +3,6 @@ I used bootstrap and flexbox to create this site.
 
 Exercise from bootcamp Kodilla https://kodilla.com/pl/courses
 
-Final effect:  .
+Final effect: https://mkudlak.github.io/Project-5/ .
 
-Png Project: 
+Png Project: https://kodilla.com/static/bootcamp/12-8-project.png  .
